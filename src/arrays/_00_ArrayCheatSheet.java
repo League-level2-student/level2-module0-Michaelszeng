@@ -26,9 +26,26 @@ public class _00_ArrayCheatSheet {
 			nums[i] = rand.nextInt(999);
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-
+		int smallest = 999;
+		for (int j=0; j<nums.length; j++) {
+			if (nums[j]<smallest) {
+				smallest = nums[j];
+			}
+		}
+		System.out.println("The smallest number is " + smallest);
+		System.out.println();
 		//9 print the entire array to see if step 8 was correct
-		
+		for (int k=0; k<nums.length; k++) {
+			System.out.println(nums[k]);
+		}
 		//10. print the largest number in the array.
+		int biggest = 0;
+		for (int l=0; l<nums.length; l++) {
+			if (nums[l]>biggest) {
+				biggest = nums[l];
+			}
+		}
+		System.out.println("biggest is " + biggest);
+
 	}
 }
